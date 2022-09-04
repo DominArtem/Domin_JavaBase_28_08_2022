@@ -1,5 +1,5 @@
 package com.hillel.domin.homeworks.homework3;
 
 public class homework3 {
-323
+3233
 }
