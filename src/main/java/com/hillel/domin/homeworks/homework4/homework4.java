@@ -3,37 +3,28 @@ package com.hillel.domin.homeworks.homework4;
 public class homework4 {
     public static void main(String[] args) {
 
-        int attackWarriorLi = 13;
-        int attackArcherLi = 24;
-        int attackHorsemanLi = 46;
 
-        double attackWarriorMin = 9;
-        double attackArcherMin = 35;
-        double attackHorsemanMin = 12;
+        int atWarLi = 13;
+        int atArLi = 24;
+        int atHorLi = 46;
 
-        int totalWarriorLi = 860;
-        int totalArcherLi = 860;
-        int totalHorsemanLi = 860;
+        int sumLi = 860;
 
-        final double Coef = 1.5;
+        int sumAtLi = (atWarLi + atArLi + atHorLi) * sumLi;
+        System.out.println(sumAtLi);
 
-        double totalWarriorMin = totalWarriorLi * Coef;
-        double totalArcherMin = totalArcherLi * Coef;
-        double totalHorsemanMin = totalHorsemanLi * Coef;
+        final double coef = 1.5;
 
+        double sumMin = coef * 860;
 
-        int totalAttackLi = attackWarriorLi * totalWarriorLi + attackArcherLi * totalArcherLi + attackHorsemanLi * totalHorsemanLi;
+        double atWarMin = 9;
+        double atArMin = 35;
+        double atHorMin = 12;
 
-        System.out.println(totalAttackLi);
+        double totAtMin = (atWarMin + atArMin + atHorMin) * sumMin;
+        System.out.println(totAtMin);
 
-
-
-        double totalAttackMin = attackWarriorMin * totalWarriorMin + attackArcherMin * totalArcherMin + attackHorsemanMin * totalHorsemanMin;
-
-        System.out.println(totalAttackMin);
-
-        double totalAttackLiTotalAttackMIn = totalAttackLi + totalAttackMin;
-
-        System.out.println(totalAttackLiTotalAttackMIn);
+        double totAttLiMIn =  totAtMin + sumAtLi ;
+        System.out.println(totAtMin + sumAtLi);
     }
 }
