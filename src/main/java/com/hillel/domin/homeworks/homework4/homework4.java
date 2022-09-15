@@ -26,5 +26,9 @@ public class homework4 {
 
         double totAttLiMIn =  totAtMin + sumAtLi ;
         System.out.println(totAtMin + sumAtLi);
+
+        System.out.println( 5 & 230);
+
+        ;
     }
 }
