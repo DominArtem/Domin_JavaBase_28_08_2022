@@ -151,7 +151,6 @@ public class Homework5 {
 
         scanner.close();
 
-
     }
 
 
