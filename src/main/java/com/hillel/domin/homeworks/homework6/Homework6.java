@@ -38,7 +38,6 @@ public class Homework6 {
             }
 
 
-
         }
     }
 }
