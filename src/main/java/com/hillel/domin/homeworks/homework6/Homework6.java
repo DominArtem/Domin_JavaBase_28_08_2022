@@ -15,7 +15,11 @@ public class Homework6 {
         int num = 10;
         int no = ((int) (Math.random() * num));
 
+
+
         for ( int i = 3 ; i >0 ; i-- ) {
+
+
 
             int user = scanner.nextInt();
 
@@ -34,6 +38,7 @@ public class Homework6 {
                 System.out.println("Number less");
                 scanner.nextLine();
 //            break;
+
 
             }
 
