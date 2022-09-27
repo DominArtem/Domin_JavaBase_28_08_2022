@@ -14,38 +14,45 @@ public class Homework6 {
 
         int num = 10;
         int no = ((int) (Math.random() * num));
+        int g = 0;
+
+        for (int i = 3 ; i > 0 ; i--) {
+
+//
+        if (scanner.hasNextInt()) {
+        } else {
+        System.out.println("Wrong data");
+            System.exit(0);
+        }
 
 
 
-        for ( int i = 3 ; i >0 ; i-- ) {
+        int user = scanner.nextInt();
 
-
-
-            int user = scanner.nextInt();
 
 //            System.out.println(no);
 
-            if (user == no) {
-                System.out.println("Exelent");
-            break;
+                if (user == no) {
+                    System.out.println("Exelent");
+                    break;
 
-            } else if (user > no) {
-                System.out.println("The number is greater");
-                scanner.nextLine();
+                } else if (user > no) {
+                    System.out.println("The number is greater");
+                    scanner.nextLine();
 //            break;
 
-            } else {
-                System.out.println("Number less");
-                scanner.nextLine();
+                } else {
+                    System.out.println("Number less");
+                    scanner.nextLine();
 //            break;
+
+
+                }
 
 
             }
-
-
         }
     }
-}
 
 
 
