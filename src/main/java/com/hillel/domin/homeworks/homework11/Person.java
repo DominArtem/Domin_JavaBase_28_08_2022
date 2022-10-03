@@ -15,6 +15,7 @@ public class Person {
 
     private static String personinfo(String name, String surname, String city, String phone){
         return "Call a person: " + name + " " + surname + " from the " + city + " by the number: " + phone ;
+
     }
 }
 
