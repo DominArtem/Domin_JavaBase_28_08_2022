@@ -1,42 +1,23 @@
 package com.hillel.domin.homeworks.homewor12;
 
-public class BurgerMain{
-
-    String meat;
-    String roll;
-    String cheese;
-    String cabbage;
-    String sauce;
+public class BurgerMain {
+    public static void main(String[] args) {
 
 
-    @Override
-    public String toString() {
-        return "BurgerMain{" +
-                "meat='" + meat + '\'' +
-                ", roll='" + roll + '\'' +
-                ", cheese='" + cheese + '\'' +
-                ", cabbage='" + cabbage + '\'' +
-                ", sauce='" + sauce + '\'' +
-                '}';
-    }
+    Burger burgerMix = new Burger("meat", "roll", "cheese", "greens", "mayonnaise");
 
-    public BurgerMain(String meat, String roll) {
-        this.meat = meat;
-        this.roll = roll;
-    }
 
-    public BurgerMain(String roll, String cheese, String cabbage, String sauce) {
-        this.roll = roll;
-        this.cheese = cheese;
-        this.cabbage = cabbage;
-        this.sauce = sauce;
-    }
+//        System.out.print("Burger mix: " + burgerMix.meat + "," + burgerMix.roll + ","  + burgerMix.cheese + ","  + burgerMix.greens + ","  + burgerMix.mayonnaise + ".");
 
-    public BurgerMain(String meat, String roll, String cheese, String cabbage, String sauce) {
-        this.meat = meat;
-        this.roll = roll;
-        this.cheese = cheese;
-        this.cabbage = cabbage;
-        this.sauce = sauce;
-    }
+        System.out.println();
+
+    Burger dietBurger = new Burger("meat", "roll", "cheese", "greeens");
+
+        System.out.println();
+
+    Burger burgerDobleMeat = new Burger("meat", "roll", "cheese", "greens", "mayonaise", "Dounle Meat");
+
+
+}
+
 }

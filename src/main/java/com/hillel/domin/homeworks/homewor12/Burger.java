@@ -9,17 +9,6 @@ public class Burger {
     String mayonnaise;
     String doubleMeat;
 
-    @Override
-    public String toString() {
-        return "Burger{" +
-                "meat='" + meat + '\'' +
-                ", roll='" + roll + '\'' +
-                ", cheese='" + cheese + '\'' +
-                ", greens='" + greens + '\'' +
-                ", mayonnaise='" + mayonnaise + '\'' +
-                ", doubleMeat='" + doubleMeat + '\'' +
-                '}';
-    }
 
     public Burger(String meat, String roll, String cheese, String greens, String mayonnaise) {
         this.meat = meat;
@@ -28,15 +17,19 @@ public class Burger {
         this.greens = greens;
         this.mayonnaise = mayonnaise;
 
-
+        System.out.println("Burger mix: " + meat + "," + roll + "," + cheese + "," + greens + "," +  mayonnaise + ".");
 
     }
-//
+
+
     public Burger(String meat, String roll, String cheese, String greens) {
         this.meat = meat;
         this.roll = roll;
         this.cheese = cheese;
         this.greens = greens;
+
+        System.out.println("Diet Burger: " + meat + "," + roll + "," + cheese + "," + greens+ ".");
+
     }
 
     public Burger(String meat, String roll, String cheese, String greens, String mayonnaise, String doubleMeat) {
@@ -46,15 +39,8 @@ public class Burger {
         this.greens = greens;
         this.mayonnaise = mayonnaise;
         this.doubleMeat = doubleMeat;
+
+        System.out.println("Burger double meat: " + doubleMeat + "," + roll + "," + cheese + "," + greens + "," +  mayonnaise+ ".");
     }
 
-    //
-//    public Burger(String roll, String cheese, String greens, String mayonnaise, String secondMeat) {
-//
-//        this.roll = roll;
-//        this.cheese = cheese;
-//        this.greens = greens;
-//        this.mayonnaise = mayonnaise;
-//        this.secondMeat = secondMeat;
-//    }
 }
