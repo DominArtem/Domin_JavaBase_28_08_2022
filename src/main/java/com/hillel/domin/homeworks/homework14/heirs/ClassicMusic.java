@@ -1,12 +1,15 @@
 package com.hillel.domin.homeworks.homework14.heirs;
 
-import com.hillel.domin.homeworks.homework14.MusicStyles;
-
 public class ClassicMusic extends MusicStyles {
 
+    String name;
+
+    public ClassicMusic(String name) {
+        this.name = name;
+    }
 
     @Override
-    protected void playMusic() {
-
+    public void playMusic() {
+        System.out.println("Play to Classic Music :" + name);
     }
 }

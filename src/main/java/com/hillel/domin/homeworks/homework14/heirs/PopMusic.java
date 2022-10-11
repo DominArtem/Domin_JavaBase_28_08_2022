@@ -1,12 +1,15 @@
 package com.hillel.domin.homeworks.homework14.heirs;
 
-import com.hillel.domin.homeworks.homework14.MusicStyles;
-
 public class PopMusic extends MusicStyles {
 
+    String name;
+
+    public PopMusic(String name) {
+        this.name = name;
+    }
 
     @Override
-    protected void playMusic() {
-        System.out.println("Play to :");
+    public void playMusic() {
+        System.out.println("Play to Pop Music :" + name);
     }
 }
