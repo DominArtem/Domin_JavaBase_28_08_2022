@@ -24,13 +24,13 @@ public class Main {
 
         User user3 = new User("Nikita", 29, 3, 1995, "Nikita@gmail.com", "0983214598", "Skiba", 91, "120/80", 11253 );
         System.out.println(user3.printAccountInfo("Nikita", 29,3,1995, "Nikita@gmail.com", "0983214598" , "Skiba", 91, "120/80", 11253 ));
-        System.out.println("Age user: " + user3.getAge());
+//        System.out.println("Age user: " + user3.getAge());
 
         System.out.println();
         System.out.println("Before");
         System.out.println();
 
-        System.out.println(user1.printAccountInfo( , 1, 5, 1998,  "tola@gmail.com", "0965554122", "Lox", 77,"120/80",8989 ));
+        System.out.println(user1.printAccountInfo("Tola", 1, 5, 1998,  "tola@gmail.com", "0965554122", "Lox", 77,"120/80",8989 ));
 
         System.out.println();
 

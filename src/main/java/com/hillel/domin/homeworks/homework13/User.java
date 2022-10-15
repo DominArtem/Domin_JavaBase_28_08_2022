@@ -32,6 +32,62 @@ public class User {
 
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getDateBirthDay() {
+        return dateBirthDay;
+    }
+
+    public int getDateBirthMonth() {
+        return dateBirthMonth;
+    }
+
+    public int getDateBirthYear() {
+        return dateBirthYear;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getPressure() {
+        return pressure;
+    }
+
+    public int getNumberStepsDay() {
+        return numberStepsDay;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public void setPressure(String pressure) {
+        this.pressure = pressure;
+    }
+
+    public void setNumberStepsDay(int numberStepsDay) {
+        this.numberStepsDay = numberStepsDay;
+    }
+
     public int getAge() {
         ageUser = a - dateBirthYear;
         return ageUser;
