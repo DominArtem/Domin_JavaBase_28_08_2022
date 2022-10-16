@@ -9,7 +9,7 @@ public class User {
     private final int dateBirthYear;
     private final String email;
     private final String telephone;
-    String surname;
+    private String surname;
     private int weight;
     private  String pressure;
     private int numberStepsDay;
