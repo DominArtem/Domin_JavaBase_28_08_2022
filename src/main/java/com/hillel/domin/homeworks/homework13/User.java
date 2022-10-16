@@ -3,17 +3,17 @@ package com.hillel.domin.homeworks.homework13;
 public class User {
 
 
-    final String name;
-    final int dateBirthDay;
-    final int dateBirthMonth;
-    final int dateBirthYear;
-    final String email;
-    final String telephone;
+    private final String name;
+    private final int dateBirthDay;
+    private final int dateBirthMonth;
+    private final int dateBirthYear;
+    private final String email;
+    private final String telephone;
     String surname;
-    int weight;
-    String pressure;
-    int numberStepsDay;
-    int ageUser;
+    private int weight;
+    private  String pressure;
+    private int numberStepsDay;
+    private int ageUser;
 
     int a = 2020;
 
