@@ -117,7 +117,6 @@ public class Main {
 
             String q = scanner.nextLine().toUpperCase();
             if (q.equals(y)){
-                continue;
             } else if (q.equals("NO")) {
                 System.out.println("Number of drink " + counter + "\n" + "Total price: " + total);
                 System.exit(0);
