@@ -19,11 +19,9 @@ public class Main {
         Drinks mineral = new Drinks();
         Drinks cola = new Drinks();
         int counter = 0;
-
+        int total = 0;
         String b = "You have more drink?";
-        String y = "Yes";
-        String n = "No";
-
+        String y = "YES";
 
         while (true) {
             DrinksMachine drinksMachine = null;
@@ -32,15 +30,10 @@ public class Main {
 
             while (true) {
                 String userValue = scanner.nextLine().toUpperCase();
-                if (userValue.equals("yes")){
-                    continue;
-                }
-                if (userValue.equals("no")) {
-                    System.exit(0);
-                }
+
+
                 for (DrinksMachine drinks : drinksMachines) {
                     if (userValue.equals(drinks.toString())) {
-//                    System.out.println("eeeee");
                         drinksMachine = DrinksMachine.valueOf(userValue);
                     }
                 }
@@ -55,51 +48,93 @@ public class Main {
 
                 switch (drinksMachine) {
                     case TEA: {
+                        if (tea == null){
+                            System.out.println("wrong data");
+                            continue;
+                        }
                         System.out.println("Your drink is being prepared: " + DrinksMachine.TEA + " for payment " + tea.TEA + "$");
                         System.out.println(b);
-//
+                        counter++;
+                        total = total + tea.TEA;
                         break;
                     }
                     case COFFEE: {
+                        if (tea == null){
+                            System.out.println("wrong data");
+                            continue;
+                        }
                         System.out.println("Your drink is being prepared: " + DrinksMachine.COFFEE + " for payment " + coffee.COFFEE + "$");
-//                        System.out.println(n);
+                        System.out.println(b);
+                        counter++;
+                        total = total + coffee.COFFEE;
                         break;
                     }
                     case LEMONADE: {
+                        if (tea == null){
+                            System.out.println("wrong data");
+                            continue;
+                        }
                         System.out.println("Your drink is being prepared: " + DrinksMachine.LEMONADE + " for payment " + lemonade.LEMONADE + "$");
-//                        System.out.println(n);
+                        System.out.println(b);
+                        counter++;
+                        total = total + lemonade.LEMONADE;
                         break;
                     }
                     case MOJITO: {
+                        if (tea == null){
+                            System.out.println("wrong data");
+                            continue;
+                        }
                         System.out.println("Your drink is being prepared: " + DrinksMachine.MOJITO + " for payment " + mojito.MOJITO + "$");
-//                        System.out.println(n);
+                        System.out.println(b);
+                        counter++;
+                        total = total + mojito.MOJITO;
                         break;
                     }
                     case MINERAL: {
+                        if (tea == null){
+                            System.out.println("wrong data");
+                            continue;
+                        }
                         System.out.println("Your drink is being prepared: " + DrinksMachine.MINERAL + " for payment " + mineral.MINERAL + "$");
-//                        System.out.println(n);
+                        System.out.println(b);
+                        counter++;
+                        total = total + mineral.MINERAL;
                         break;
                     }
                     case COCACOLA: {
+                        if (tea == null){
+                            System.out.println("wrong data");
+                            continue;
+                        }
                         System.out.println("Your drink is being prepared: " + DrinksMachine.COCACOLA + " for payment " + cola.COCACOLA + "$");
-//                        System.out.println(n);
+                        System.out.println(b);
+                        counter++;
+                        total = total + cola.COCACOLA;
                         break;
                     }
                 }
-//            String d = String.valueOf(scanner.nextLine());
-//                        if (Objects.equals(d, y)){
-//                            continue;
-//                        }
-//                        if (Objects.equals(d, n)) {
-//                            System.exit(0);
-//                        }
+
+            String q = scanner.nextLine().toUpperCase();
+            if (q.equals(y)){
+                continue;
+            } else if (q.equals("NO")) {
+                System.out.println("Number of drink " + counter + "\n" + "Total price: " + total);
+                System.exit(0);
+            }else {
+                System.exit(0);
             }
-//               System.out.println(b);
+
+            }
+
+            }
+
             }
 
 
 
-        }
+
+
 
 
 
