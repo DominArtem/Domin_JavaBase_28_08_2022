@@ -1,6 +1,7 @@
 package com.hillel.domin.homeworks.homework16;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -31,6 +32,12 @@ public class Main {
 
             while (true) {
                 String userValue = scanner.nextLine().toUpperCase();
+                if (userValue.equals("yes")){
+                    continue;
+                }
+                if (userValue.equals("no")) {
+                    System.exit(0);
+                }
                 for (DrinksMachine drinks : drinksMachines) {
                     if (userValue.equals(drinks.toString())) {
 //                    System.out.println("eeeee");
@@ -42,6 +49,7 @@ public class Main {
                 } else {
                     System.out.println("Value is incorrect");
                 }
+
             }
 
 
@@ -49,12 +57,7 @@ public class Main {
                     case TEA: {
                         System.out.println("Your drink is being prepared: " + DrinksMachine.TEA + " for payment " + tea.TEA + "$");
                         System.out.println(b);
-//                        String d = scanner.nextLine();
-//                        if (d == "YES"){
-//                            continue;
-//                        } else if (d == "NO") {
-//                            System.exit(0);
-//                        }
+//
                         break;
                     }
                     case COFFEE: {
@@ -83,13 +86,13 @@ public class Main {
                         break;
                     }
                 }
-            String d = scanner.nextLine();
-                        if (y == "YES"){
-                            continue;
-                        }
-                        if (n == "NO") {
-                            break;
-                        }
+//            String d = String.valueOf(scanner.nextLine());
+//                        if (Objects.equals(d, y)){
+//                            continue;
+//                        }
+//                        if (Objects.equals(d, n)) {
+//                            System.exit(0);
+//                        }
             }
 //               System.out.println(b);
             }
