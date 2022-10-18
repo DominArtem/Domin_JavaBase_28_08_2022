@@ -55,7 +55,7 @@ public class Main {
                         System.out.println("Your drink is being prepared: " + DrinksMachine.TEA + " for payment " + tea.TEA + "$");
                         System.out.println(b);
                         counter++;
-                        total = total + tea.TEA;
+                        total += tea.TEA;
                         break;
                     }
                     case COFFEE: {
@@ -66,7 +66,7 @@ public class Main {
                         System.out.println("Your drink is being prepared: " + DrinksMachine.COFFEE + " for payment " + coffee.COFFEE + "$");
                         System.out.println(b);
                         counter++;
-                        total = total + coffee.COFFEE;
+                        total += coffee.COFFEE;
                         break;
                     }
                     case LEMONADE: {
@@ -77,7 +77,7 @@ public class Main {
                         System.out.println("Your drink is being prepared: " + DrinksMachine.LEMONADE + " for payment " + lemonade.LEMONADE + "$");
                         System.out.println(b);
                         counter++;
-                        total = total + lemonade.LEMONADE;
+                        total += lemonade.LEMONADE;
                         break;
                     }
                     case MOJITO: {
@@ -88,7 +88,7 @@ public class Main {
                         System.out.println("Your drink is being prepared: " + DrinksMachine.MOJITO + " for payment " + mojito.MOJITO + "$");
                         System.out.println(b);
                         counter++;
-                        total = total + mojito.MOJITO;
+                        total += mojito.MOJITO;
                         break;
                     }
                     case MINERAL: {
@@ -99,7 +99,7 @@ public class Main {
                         System.out.println("Your drink is being prepared: " + DrinksMachine.MINERAL + " for payment " + mineral.MINERAL + "$");
                         System.out.println(b);
                         counter++;
-                        total = total + mineral.MINERAL;
+                        total += mineral.MINERAL;
                         break;
                     }
                     case COCACOLA: {
@@ -110,7 +110,7 @@ public class Main {
                         System.out.println("Your drink is being prepared: " + DrinksMachine.COCACOLA + " for payment " + cola.COCACOLA + "$");
                         System.out.println(b);
                         counter++;
-                        total = total + cola.COCACOLA;
+                        total += cola.COCACOLA;
                         break;
                     }
                 }
